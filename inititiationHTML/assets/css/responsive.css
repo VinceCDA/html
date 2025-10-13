@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+
+    header{
+        position: relative;
+    }
+    header nav{
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: black;
+        width: 200px;
+        z-index: 1;
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    #menu-toggle{
+        display: none;
+    }
+    
+  .background img {
+    width: 100%;
+    height: auto;
+  }
+  .background :nth-child(2) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
+  .titre {
+    font-size: 1.5rem;
+  }
+  .projects .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .projects .container .box {
+    width: 90%;
+    padding: 1rem;
+  }
+  .about .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about p:nth-of-type(2) {
+    padding: 1rem;
+  }
+  .about .container .team {
+    width: 90%;
+    padding: 1rem;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .contact p:nth-of-type(2) {
+    padding: 1rem;
+  }
+  .contact .formulaire {
+    box-sizing: border-box;
+    width: 95%;
+    margin: auto;
+  }
+  .formulaire .btn {
+    width: fit-content;
+  }
+}
+.menu-icon{
+        cursor: pointer;
+        font-size: 2rem;
+        display: none;
+    }

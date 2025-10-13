@@ -1,18 +1,33 @@
-.container{
-    width: 50%;
-    margin: auto;
-    height: 40vh;
+.container {
+  width: 50%;
+  margin: auto;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  width: 25%;
+  height: 25%;
+  background-color: aqua;
+  border: 1px solid black;
 }
 /* mobile petit (iphoneSE)*/
 @media (max-width: 480px) {
   .container {
     background-color: blue;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 /*mobile standard iphone14, galaxy*/
 @media (min-width: 481px) and (max-width: 600px) {
   .container {
     background-color: grey;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 /*tablette portrait (ipad mini)*/
