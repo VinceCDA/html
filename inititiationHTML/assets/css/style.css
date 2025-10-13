@@ -1,0 +1,27 @@
+.bg {
+  background-color: aqua;
+  color: red;
+  font-size: 40px;
+}
+p {
+  font-size: 50px;
+}
+.vert{
+  color: green;
+}
+#bordure{
+  border: 2px solid red;
+}
+.position{
+  border: 2px solid red;
+  position: sticky;
+  top: 200px;
+  left: 200px;
+}
+.rel{
+  position: relative;
+}
+.sticky{
+  position:sticky;
+  top: 0;
+}

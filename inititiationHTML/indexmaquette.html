@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Votre identité</legend>
+      <ol>
+        <li>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Prénom et nom">
+        </li>
+        <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="exemple@domaine.com">
+        </li>
+        <li>
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" placeholder="par ex: +3375500000000">
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>Adresse de livraison</legend>
+      <ol>
+        <li>
+            <label for="adresse">Adresse</label>
+            <textarea name="adresse" id="adresse"></textarea>
+        </li>
+        <li>
+            <label for="codepostal">Code postal</label>
+            <input type="text" id="codepostal">
+        </li>
+        <li>
+            <label for="pays">Pays</label>
+            <input type="text" id="pays">
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+        <legend>Informations CB</legend>
+        <ol>
+            <li>
+                <fieldset>
+                    <legend>Type de carte bancaire</legend>
+                    <ol>
+                        <li><input type="radio" name="typecarte" id="visa">Visa</li>
+                        <li><input type="radio" name="typecarte" id="amex">AmEx</li>
+                        <li><input type="radio" name="typecarte" id="mastercard">Mastercard</li>
+                    </ol>
+                </fieldset>
+            </li>
+            <li>
+                <label for="nocarte">N° de carte</label>
+                <input type="number" id="nocarte">
+            </li>
+            <li>
+                <label for="codesecurite">Code de sécurité</label>
+                <input type="number" id="codesecurite">
+            </li>
+            <li>
+                <label for="nomporteur">Nom du porteur</label>
+                <input type="text" id="nomporteur" placeholder="Même nom que sur la carte">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <button>J'achète !</button>
+    </fieldset>
+  </body>
+</html>

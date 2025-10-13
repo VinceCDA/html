@@ -1,0 +1,129 @@
+body{
+  font-family: "BBH Sans Hegarty", sans-serif;
+}
+header {
+  display: flex;
+}
+header .logo {
+  width: 20%;
+  margin-left: 1rem;
+}
+.logo span {
+  font-weight: 900px;
+}
+header nav{
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  
+}
+header nav li {
+  padding-top: 15px;
+  list-style: none;
+  margin-right: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.background{
+  position: relative;
+  max-width: 100%;
+}
+.background img{
+  width: 100%;
+}
+.background p{
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+.background p span{
+  background-color: grey;
+  font-weight: 900px;
+  display: inline-block;
+  padding: 5px;
+}
+/*Partie projects*/
+.projects .container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.projects .container .box{
+  
+  width: 24%;
+}
+.projects .container .box img{
+  position: relative;
+  width: 100%;
+}
+.projects .container .box p{
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.titre{
+  font-size: 2rem;
+  margin: 15px;
+}
+.about .container{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.about .container .team{
+  width: 24%;
+}
+.team img{
+  width: 100%;
+}
+.team .name{
+  font-size: 1.5rem;
+}
+.team .job{
+  font-size: 0.85rem;
+  color: grey;
+}
+.team a{
+  display: block;
+  background-color: lightgray;
+  text-align: center;
+  padding: 7px;
+}
+.formulaire{
+  width: 95%;
+  margin: auto;
+}
+.formulaire input{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.formulaire .btn{
+  width: 20%;
+}
+.contact img{
+  width: 100%;
+  display: block;
+}
+footer {
+  max-width: 100%;
+  height: 15vh;
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.contact{
+  margin-bottom: 0;
+}
+main{
+  margin: 0;
+}

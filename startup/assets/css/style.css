@@ -1,0 +1,27 @@
+.brands p {
+  display: inline;
+}
+header {
+  display: flex;
+}
+header .logo {
+  width: 20%;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+header nav li {
+  padding-top: 15px;
+  list-style: none;
+  margin-right: 1rem;
+}
+header nav li a {
+  text-decoration: none;
+  color: black;
+}
+main .bandeau img{
+    position: relative;
+    width: 100%;
+}

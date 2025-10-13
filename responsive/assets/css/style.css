@@ -1,0 +1,41 @@
+.container{
+    width: 50%;
+    margin: auto;
+    height: 40vh;
+}
+/* mobile petit (iphoneSE)*/
+@media (max-width: 480px) {
+  .container {
+    background-color: blue;
+  }
+}
+/*mobile standard iphone14, galaxy*/
+@media (min-width: 481px) and (max-width: 600px) {
+  .container {
+    background-color: grey;
+  }
+}
+/*tablette portrait (ipad mini)*/
+@media (min-width: 601px) and (max-width: 768px) {
+  .container {
+    background-color: pink;
+  }
+}
+/*tablette paysage petit laptop*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    background-color: green;
+  }
+}
+/*laptop standard*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    background-color: yellow;
+  }
+}
+/*grand ecran*/
+@media (min-width: 1281px) {
+  .container {
+    background-color: red;
+  }
+}

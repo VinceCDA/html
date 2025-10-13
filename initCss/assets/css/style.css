@@ -1,0 +1,65 @@
+ul li:nth-child(1){
+    color: red;
+}
+ul li:nth-child(odd){
+    color: blue;
+}
+ul li:nth-child(even){
+    color: #008000;
+}
+ul li:nth-child(2n){
+    color: yellow;
+}
+ul li:first-child{
+    color: red;
+}
+ul li:last-child{
+    color: purple;
+}
+
+.container :nth-child(4){
+    color: green;
+}
+.container p:nth-child(2){
+    color: blue;
+}
+.container p:nth-of-type(2){
+    color: aqua;
+}
+/*LVHA*/
+a:visited{
+    color: yellow;
+}
+a:link{
+    color: blueviolet;
+}
+a:hover{
+    color: aqua;
+}
+button:hover{
+    background-color: purple;
+}
+button:active{
+    transform: scale(2);
+}
+input:focus{
+    border: 2px solid red;
+    outline: none;
+    box-shadow: 0 0 5px green;
+}
+.boxsizing{
+    box-sizing: border-box;
+    overflow-y: hidden;
+    width: 100%;
+    height: 20vh;
+    border: 1px solid red;
+    padding: 1rem;
+    background-color: aqua;
+}
+.boxsizing1{
+    width: 100%;
+    height: 20vh;
+    border: 1px solid red;
+    padding: 1rem;
+    background-color: aqua;
+}
