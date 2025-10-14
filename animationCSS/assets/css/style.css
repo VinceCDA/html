@@ -1,0 +1,431 @@
+.btn1 {
+  background-color: aqua;
+}
+.btn1:hover {
+  background-color: purple;
+}
+.btn2 {
+  background-color: red;
+  transition: background-color 0.5s ease-in 0.1s;
+}
+.btn2:hover {
+  background-color: green;
+}
+/*
+transition: [propriété] [durée] [fonction de timing] [delais]
+propriété: background color, width, all
+durée: s durée de transition
+fonction de timeing
+ease: par défaut
+linear: vitesse constante
+ease-in: commence doucement fini vite
+ease-out: commence vite fini doucement
+ease-in-out: commence et fini doucement
+delais: temps avant début transition
+*/
+.btn3 {
+  background-color: royalblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  /* transition: background-color 5ms ease, transform 0.3s ease-in-out; */
+  transition: all 2s ease-in-out;
+}
+.btn3:hover {
+  background-color: aqua;
+  transform: scale(1.3);
+}
+
+/* Transform */
+body > p {
+  transition: transform 1s;
+}
+body > p:hover {
+  /* Déplacement d'élément */
+  /* transform: translate(30px); */
+  transform: translate(20px, 30px);
+}
+/* Agrandissement d'élément */
+li {
+  transform-origin: left top;
+  transition: transform 2s ease-in;
+}
+li:hover {
+  transform: scale(2);
+}
+.rotation {
+  transition: transform 0.5s;
+}
+.rotation:hover {
+  transform: rotate(180deg);
+}
+.incline {
+  transition: transform 1s;
+}
+.incline:hover {
+  transform: skew((20deg, 10deg));
+}
+.perspective {
+  transition: transform 1s;
+}
+.perspective:hover {
+  transform: perspective(200px) rotateY(-2deg) rotateX(-5deg);
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: transform 1s ease-in;
+}
+.box:hover {
+  transform: translate(50px) rotate(90deg) scale(1.8);
+}
+.exer1 {
+  width: 100px;
+  height: 100px;
+  transition: transform 200ms;
+}
+.exer1:hover {
+  transform: scale(1.2);
+}
+.card {
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  transition: transform 600ms;
+  perspective: 1000px;
+}
+.card:hover {
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+.img-exer {
+  width: 400px;
+  height: 250px;
+  transition: all 400ms;
+}
+.img-exer:hover {
+  transform: scale(1.15);
+  filter: brightness(85%) blur(1px);
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes balle {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+@keyframes flipcard {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+    color: black;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes rotatebox {
+  0% {
+    transform: rotate(0deg);
+    background-color: blue;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: brown;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: yellow;
+  }
+}
+@keyframes taille {
+  0% {
+    width: 80px;
+  }
+  50% {
+    width: 200px;
+    height: 200px;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+  }
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  animation: bounce 1s infinite alternate;
+}
+.cercle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid grey;
+  border-top-color: blue;
+  border-right-color: pink;
+  animation: spin 1s linear infinite;
+}
+.fade {
+  opacity: 0;
+  animation: fade 1s infinite alternate;
+}
+.slide {
+  animation: slide 1s infinite forwards alternate;
+}
+.pulse {
+  background-color: blueviolet;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+.balle {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  border-radius: 50%;
+  position: relative;
+  animation: balle 0.7s infinite alternate;
+}
+.cardanim {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  color: white;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: flipcard 2s infinite alternate linear;
+}
+.couleur {
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5%;
+  color: white;
+  animation: rainbow 3s infinite alternate;
+}
+.rotatebox {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  animation: rotatebox 1s infinite linear, taille 1s infinite linear;
+}
+.ex1 {
+  filter: opacity(0);
+  animation: ex1 2s forwards;
+}
+@keyframes ex1 {
+  from {
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(1);
+    transform: translateY(100px);
+  }
+}
+.btn4 {
+  transition: all 1s ease-in-out;
+}
+.btn4:hover {
+  transform: scale(1.2);
+  background-color: rebeccapurple;
+}
+.btn4:after {
+  content: "New Button";
+}
+.boxex {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: boxex 2s infinite linear alternate;
+}
+@keyframes boxex {
+  0% {
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    transform: translateX(160px);
+  }
+}
+.cercleex1 {
+  color: fuchsia;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: ex2 5s infinite linear forwards;
+}
+@keyframes ex2 {
+  0% {
+    transform: scale(1);
+    background-color: currentColor;
+  }
+  25% {
+    color: rgb(from currentColor 200 g b / alpha);
+    transform: scale(1.5);
+    background-color: currentColor;
+  }
+  50% {
+    transform: scale(1);
+    background-color: currentColor;
+  }
+  75% {
+    color: rgb(from currentColor r g 10 / alpha);
+    transform: scale(1.5);
+    background-color: currentColor;
+  }
+  100% {
+    color: rgb(from currentColor 10 g b / alpha);
+    transform: scale(1);
+    background-color: currentColor;
+  }
+}
+.cligne {
+  animation: clignex 0.5s infinite alternate;
+}
+@keyframes clignex {
+  0% {
+    color: red;
+    text-shadow: orange;
+  }
+  50% {
+    color: yellow;
+    text-shadow: red;
+  }
+  100% {
+    color: orange;
+    text-shadow: yellow;
+  }
+}
+.bar {
+  display: flex;
+  width: 800px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: gray;
+}
+.progress {
+  height: auto;
+  border-radius: 30px;
+  animation: progressbar 5s infinite linear;
+}
+@keyframes progressbar {
+  0% {
+    width: 0%;
+    background-color: lightblue;
+  }
+  100% {
+    width: 100%;
+    background-color: blue;
+  }
+}
